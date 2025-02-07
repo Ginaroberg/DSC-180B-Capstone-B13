@@ -2,11 +2,7 @@ import os
 import glob
 import xarray as xr
 
-input_dir = "" # configure this
-output_dir = "" # configure this
-
-
-def process_input(input_dir, output_dir):
+def aggregate_experiments(input_dir, output_dir):
     """
     - Finds all netCDF files matching "*_global_yearly_*.nc" in `input_dir`.
     - Parses experiment = parts[3], variable = parts[4], start_year = int(parts[7]).
@@ -40,6 +36,7 @@ def process_input(input_dir, output_dir):
             var_name   = parts[4]      # e.g. "pr", "tas", ...
             start_year = int(parts[7]) # e.g. 2011
         except (IndexError, ValueError):
+            # Skip files that don't match expected pattern
             continue
 
         keep_file = False
@@ -72,7 +69,11 @@ def process_input(input_dir, output_dir):
 
                 if experiment.lower() == "picontrol":
                     # Subset to keep only time >= 2015
+                    # If your time coordinate is integer-based, e.g. [2011..2020]
                     ds = ds.sel(time=slice(2015, None))
+
+                    # Or if time is a datetime coordinate, do:
+                    # ds = ds.where(ds.time.dt.year >= 2015, drop=True)
 
                 # If no time steps remain, skip
                 if not ds.time.size:
@@ -113,6 +114,3 @@ def process_input(input_dir, output_dir):
         # Close each variable dataset
         for ds_var in merged_vars:
             ds_var.close()
-
-
-process_input(input_dir, output_dir)

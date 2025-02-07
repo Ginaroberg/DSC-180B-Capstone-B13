@@ -1,0 +1,10 @@
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/ch4/historical/ch4_historical_annual_1850_2014.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/ch4/picontrol/ch4_picontrol_annual_1850_2014.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/ch4/ssp126/ch4_ssp126_annual_2015_2100.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/ch4/ssp370/ch4_ssp370_annual_2015_2100.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/ch4/ssp585/ch4_ssp585_annual_2015_2100.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/co2/historical/co2_historical_annual_1850_2014.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/co2/picontrol/co2_picontrol_annual_1850_2014.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/co2/ssp126/co2_ssp126_annual_2015_2100.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/co2/ssp370/co2_ssp370_annual_2015_2100.txt
+https://files.isimip.org/ISIMIP3b/InputData/climate/atmosphere_composition/co2/ssp585/co2_ssp585_annual_2015_2100.txt

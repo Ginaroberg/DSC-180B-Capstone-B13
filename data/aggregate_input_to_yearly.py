@@ -1,11 +1,10 @@
+# aggregate to monthly start
 import xarray as xr
 import os
 
-input_folder = "" # configure this
-
-def aggregate_input(file_name):
+def aggregate_dataset(file_name):
     """
-    Aggregates daily values in an xarray dataset into yearly means.
+    Aggregates daily values in an xarray dataset into monthly (month-start) and yearly means.
     Saves the aggregated datasets to new NetCDF files.
 
     Parameters:
@@ -16,18 +15,25 @@ def aggregate_input(file_name):
     """
     try:
         # Load the dataset
-        ds = xr.open_dataset(input_folder + file_name)
+        path = '/glade/derecho/scratch/qzou/input/'
+        ds = xr.open_dataset(path + file_name)
 
         # Ensure time dimension exists
         if 'time' not in ds.dims:
             raise ValueError("The dataset does not have a 'time' dimension.")
 
-        # Aggregate to monthly means
+        # # Aggregate to monthly means (month start)
         # ds_monthly_start = ds.resample(time='MS').mean()
         # ds_monthly_start['time'] = ds_monthly_start.dt.year
         # monthly_file_name = file_name.replace('_daily', '_monthly')
         # ds_monthly_start.to_netcdf(f'/glade/derecho/scratch/qzou/input_monthly/{monthly_file_name}')
         # print(f"{monthly_file_name} saved")
+
+        # # Aggregate to quarterly means (quarter start)
+        # ds_quarterly = ds.resample(time='QS').mean()
+        # quarterly_file_name = file_name.replace('_daily', '_quarterly')
+        # ds_quarterly.to_netcdf(f'/glade/derecho/scratch/qzou/input_quarterly/{quarterly_file_name}')
+        # print(f"{quarterly_file_name} saved")
 
         # Aggregate to yearly means
         ds_yearly = ds.resample(time='YS').mean()
@@ -40,7 +46,6 @@ def aggregate_input(file_name):
         print(f"An error occurred: {e}")
 
 
-filenames = [f for f in os.listdir(input_folder) if f.endswith('.nc')]
-
+filenames = [f for f in os.listdir('/glade/derecho/scratch/qzou/input/') if f.endswith('.nc')]
 for fn in filenames:
-    aggregate_input(fn)
+    aggregate_dataset(fn)
