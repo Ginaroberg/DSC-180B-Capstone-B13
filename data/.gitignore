@@ -1,4 +1,9 @@
 .ipynb_checkpoints
+emission
+forcing
+inputs
+irr
 output
-processed_input
+processed_irr
 processed_output
+
