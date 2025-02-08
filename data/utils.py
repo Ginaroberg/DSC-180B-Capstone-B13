@@ -4,7 +4,8 @@ import pandas as pd
 from eofs.xarray import Eof
 
 
-data_path = './inputs/' # CONFIGURE
+input_dir = './processed_input/' # CONFIGURE ME
+output_dir = './processed_output/' # CONFIGURE ME
 
 
 
@@ -31,7 +32,7 @@ def get_Xtrain(datasets, n_eofs=5):
     if isinstance(datasets, str):
         datasets = [datasets]
         
-    X = xr.concat([xr.open_dataset(data_path + f'inputs_{d}.nc') for d in datasets], dim='time')
+    X = xr.concat([xr.open_dataset(input_dir + f'inputs_{d}.nc') for d in datasets], dim='time')
     X = X.assign_coords(time=np.arange(len(X.time)))  # Reindex time
 
     variables = ['pr', 'rlds', 'rsds', 'sfcwind', 'tas', 'tasmax', 'tasmin']
@@ -64,7 +65,7 @@ def project_eofs(X, var, solver, mean, std, n_eofs):
 
 
 def get_Xtest(file, eof_solvers, mean_dict, std_dict, n_eofs=5):
-    X = xr.open_dataset(data_path + f'inputs_{file}.nc')
+    X = xr.open_dataset(input_dir + f'inputs_{file}.nc')
 
     variables = ['pr', 'rlds', 'rsds', 'sfcwind', 'tas', 'tasmax', 'tasmin']
 
@@ -83,16 +84,16 @@ def get_Ytrain(datasets):
     if isinstance(datasets, str):
         datasets = [datasets]
         
-    Y = xr.concat([xr.open_dataset(data_path + f'/lpjml_{d}_1850_2014.nc') if d == 'historical' else xr.open_dataset(data_path + f'/lpjml_{d}_2015_2100.nc') for d in datasets], dim='time')
+    Y = xr.concat([xr.open_dataset(output_dir + f'/lpjml_{d}_1850_2014.nc') if d == 'historical' else xr.open_dataset(output_dir + f'/lpjml_{d}_2015_2100.nc') for d in datasets], dim='time')
 
     return Y
 
 
 def get_Ytest(exp):
     if exp == 'historical':
-        ds = xr.open_dataset(data_path + f'lpjml_{exp}_1850_2014.nc')
+        ds = xr.open_dataset(output_dir + f'lpjml_{exp}_1850_2014.nc')
     else:
-        ds = xr.open_dataset(data_path + f'lpjml_{exp}_2015_2100.nc')
+        ds = xr.open_dataset(output_dir + f'lpjml_{exp}_2015_2100.nc')
 
     return ds
 
