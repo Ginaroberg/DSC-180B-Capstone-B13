@@ -1,9 +1,10 @@
 # DSC-180B-Capstone-B13
 DSC 180AB Capstone 
 
-**Note:** Access to NCAR is required to execute the code in the NCAR directory.
 
 ## Project Overview
+
+By combining historical data with these climate scenarios, our team is looking to develop a predictive model for crop yields and create an interactive dashboard that visualizes the impact of climate change on global agriculture. Our goal with this project is to highlight the connection between climate policy and food security. 
 
 
 ## Running the Models
