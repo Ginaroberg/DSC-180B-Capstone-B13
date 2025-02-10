@@ -11,7 +11,7 @@ By combining historical data with these climate scenarios, our team is looking t
 
 To run the models, follow these steps:
 
-1. **Download Data and Preprocess**
+1. **Download Data and Preprocess**  
    Use the provided `prepare_data.py` script to execute the necessary data tasks. This script supports three actions—`download`, `process_input`, and `process_output`—to handle downloading, input data preprocessing, and output data processing respectively.
 
 2. **Set Up the Environment**  
@@ -30,7 +30,7 @@ To run the models, follow these steps:
     pip install tensorflow-probability==0.24
     ```
 
-3. **Running the Code** \
+3. **Running the Code**  
    Once the environment is set up, you should be able to proceed with running the models on a Jupyter Notebook. Each model involves
    training that may take a long time to run if on a device lacking a CUDA capable GPU. If unable to run on environment, or runtime takes
    too long, a pdf output has been provided of the results of running the Notebook. 
