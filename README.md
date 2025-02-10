@@ -11,18 +11,10 @@ By combining historical data with these climate scenarios, our team is looking t
 
 To run the models, follow these steps:
 
-1. **Download the Data**
-   - Use `impact_model_input.txt`, `impact_model_input.txt`, and `prepare_data.py` to download input and output files. 
+1. **Download Data and Preprocess**
+   Use the provided `prepare_data.py` script to execute the necessary data tasks. This script supports three actions—`download`, `process_input`, and `process_output`—to handle downloading, input data preprocessing, and output data processing respectively.
 
-3. **Extract the Files**
-   - Extract the contents of `prepare_data.py` into a folder named `inputs`.
-   - Extract the contents of `prepare_data.py` into a folder named `processed_output`.
-   - Place these two folders into `DSC-180B-Capstone-B13`
-
-5. **Modify File Paths (Optional)**  
-   - If you prefer to store the data in a different location, update the file paths in `prepare_data.py` to match your data directory structure.
-
-6. **Set Up the Environment**  
+2. **Set Up the Environment**  
    Run the following commands to create and configure a Conda environment:
 
    ```bash
@@ -38,7 +30,7 @@ To run the models, follow these steps:
     pip install tensorflow-probability==0.24
     ```
 
-7. **Running the Code** \
+3. **Running the Code** \
    Once the environment is set up, you should be able to proceed with running the models on a Jupyter Notebook. Each model involves
    training that may take a long time to run if on a device lacking a CUDA capable GPU. If unable to run on environment, or runtime takes
    too long, a pdf output has been provided of the results of running the Notebook. 
