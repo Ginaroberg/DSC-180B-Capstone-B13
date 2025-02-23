@@ -16,6 +16,8 @@ We focus on key emissions variables that influence crop growth:
 - **Methane (CH₄):** Contributes to warming and affects atmospheric composition.
 - **Black Carbon (BC) and Sulfur Dioxide (SO₂):** Influence radiative forcing and cloud formation, affecting sunlight availability and precipitation.
 
+## Machine Learning Models
+
 Machine learning approaches explored:
 
 - **Gaussian Process Regression (GPR):** 
@@ -26,7 +28,8 @@ Machine learning approaches explored:
 
 
 
-## Discussion
+## Discussion/Future work
+
 
 
 ## Project Links
