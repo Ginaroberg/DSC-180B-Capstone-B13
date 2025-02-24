@@ -1,5 +1,7 @@
 # DSC-180B-Capstone-B13
-DSC 180AB Capstone 
+DSC 180AB Capstone Webpage: https://ginaroberg.github.io/DSC-180B-Capstone-B13/
+Navigate to the gh-branch in this repo for Github Pages Code
+Github Pages code: https://github.com/Ginaroberg/DSC-180B-Capstone-B13/tree/gh-pages
 
 
 ## Project Overview
