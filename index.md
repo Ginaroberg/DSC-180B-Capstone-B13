@@ -28,7 +28,14 @@ Machine learning approaches explored:
 
 
 
+
 ## Discussion/Future work
+
+The comparison between the Gaussian Process model and the Random Forest model shows key differences in prediction accuracy for crop yields. The GP model produced lower RMSE values throughout all crop yields, indicating better performance in capturing climate to yield production relationships. However, its sensitivity to missing data may limit its scalability for large scale agricultural predictions. In contrast, the RF model, while computationally efficient, showed higher RMSE values in all crops, suggesting a greater difficulty in modeling yield variability with correct accuracy. The variability in RMSE across different crops highlights how some crops, such as soybeans and wheat, are harder to predict due to their complex relationship with climate factors like precipitation, temperature, and aerosol gases like carbon dioxide, unlike the crop rice, which showed the lowest RMSE generally with both models. 
+
+For farmers, these findings provide valuable insight into how different crops might respond to changing climate conditions. The higher RMSE for soybeans suggests that its yield is more sensitive to climate variability, making soybeans a riskier choice in regions that experience extreme weather conditions. Maize and rice show significantly lower RMSE values, which means that their yields can be predicted with more confidence. This information can guide crop selection, schedules for crop planting, and irrigation planning which can help farmers reduce the risks that come with climate change. To add on, policymakers and scientists can use these insights to develop agricultural policies and possibly a early warning systems for farmers in high-risk areas.
+
+In the future, improving such predictive models will be crucial for increasing food security and farming practices. Refinement of the GP model by balancing accuracy and computational efficiency could enhance its  applicability in the real world. In addition, incorporating additional data sources such as soil quality and extreme weather events could further improve predictions, particularly for crops with higher RMSE values. Understanding which crops are most affected by climate variability allows for the correct adaptation strategies, such as developing drought resistant crop variations, improving irrigation systems, and/or adjusting planting schedules. Using these insights into policy frameworks and agricultural planning, farmers and decision makers can make more informed decisions, ensuring flexibility against climate-related challenges in global food production.
 
 
 
