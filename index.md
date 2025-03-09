@@ -48,27 +48,27 @@ In the future, improving such predictive models will be crucial for increasing f
 
 ## Appendix
 
-**Maize**
-![GP-mai](/assets/images/GP-mai.png)
-![RF-mai](/assets/images/RF-mai.png)
----
-**Rice (1st growing period)**
-![GP-ri1](/assets/images/GP-ri1.png)
-![RF-ri1](/assets/images/RF-ri1.png)
----
-**Rice (2nd growing period)**
-![GP-ri2](/assets/images/GP-ri2.png)
-![RF-ri2](/assets/images/RF-ri2.png)
----
-**Soybean**
-![GP-soy](/assets/images/GP-soy.png)
-![RF-soy](/assets/images/RF-soy.png)
----
-**Spring Wheat**
-![GP-swh](/assets/images/GP-swh.png)
-![RF-swh](/assets/images/RF-swh.png)
----
-**Winter Wheat**
-![GP-wwh](/assets/images/GP-wwh.png)
-![RF-wwh](/assets/images/RF-wwh.png)
+**Maize**  
+![GP-mai](/assets/images/GP-mai.png)  
+![RF-mai](/assets/images/RF-mai.png)  
+---  
+**Rice (1st growing period)**  
+![GP-ri1](/assets/images/GP-ri1.png)  
+![RF-ri1](/assets/images/RF-ri1.png)  
+---  
+**Rice (2nd growing period)**  
+![GP-ri2](/assets/images/GP-ri2.png)  
+![RF-ri2](/assets/images/RF-ri2.png)  
+---  
+**Soybean**  
+![GP-soy](/assets/images/GP-soy.png)  
+![RF-soy](/assets/images/RF-soy.png)  
+---  
+**Spring Wheat**  
+![GP-swh](/assets/images/GP-swh.png)  
+![RF-swh](/assets/images/RF-swh.png)  
+---  
+**Winter Wheat**  
+![GP-wwh](/assets/images/GP-wwh.png)  
+![RF-wwh](/assets/images/RF-wwh.png)  
 ---
