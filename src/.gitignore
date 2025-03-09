@@ -1,9 +1,5 @@
 .ipynb_checkpoints
-emission
-forcing
-inputs
-irr
-output
-processed_irr
+__pycache__
+Input4MIPs
 processed_output
-
+downloads

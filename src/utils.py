@@ -4,7 +4,7 @@ import pandas as pd
 from eofs.xarray import Eof
 
 
-input_dir = "./CMIP6_input/"
+input_dir = "./Input4MIPs/"
 output_dir = "./processed_output/"
 
 
