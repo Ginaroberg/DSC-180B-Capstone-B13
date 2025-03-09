@@ -20,11 +20,23 @@ We focus on key emissions variables that influence crop growth:
 
 Machine learning approaches explored:
 
-- **Gaussian Process Regression (GPR):** 
-- **Random Forest Regressor (RF):** 
-- **Convolutional Long Short-Term Memory Neural Networks (CNN-LSTM):** 
+**Gaussian Process Regression (GPR):**  
+GPR is a non-parametric Bayesian method that models relationships in data without assuming a fixed equation. Instead, it uses a flexible, kernel-based approach to make predictions while naturally handling uncertainty.
+
+- Uncertainty Quantification: Provides confidence intervals to access prediction reliability
+- Nonlinear Modeling: Able to capture complex relationships between emissions and crop yields
+- Data Efficiency: Performs well with limited emissions data compared to Deep Learning Models
+- Automatic Relevance Determination (ARD): Allows automatic identification of the most influential emission factors during training
+
+
+**Random Forest Regressor (RF):**  
+
 
 ## Results
+
+![RMSE_table](/assets/images/rmse_table.png)
+
+
 
 
 
@@ -38,8 +50,3 @@ For farmers, these findings provide valuable insight into how different crops mi
 In the future, improving such predictive models will be crucial for increasing food security and farming practices. Refinement of the GP model by balancing accuracy and computational efficiency could enhance its  applicability in the real world. In addition, incorporating additional data sources such as soil quality and extreme weather events could further improve predictions, particularly for crops with higher RMSE values. Understanding which crops are most affected by climate variability allows for the correct adaptation strategies, such as developing drought resistant crop variations, improving irrigation systems, and/or adjusting planting schedules. Using these insights into policy frameworks and agricultural planning, farmers and decision makers can make more informed decisions, ensuring flexibility against climate-related challenges in global food production.
 
 
-
-## Project Links
-
-- **GitHub Repository:** [DSC-180B Capstone B13](https://github.com/Ginaroberg/DSC-180B-Capstone-B13)
-- **Dashboard** [links to repo for now](https://github.com/Ginaroberg/Global-Crop-Yield-Climate-Simulator)
