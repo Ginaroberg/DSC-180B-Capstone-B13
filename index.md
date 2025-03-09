@@ -31,6 +31,12 @@ GPR is a non-parametric Bayesian method that models relationships in data withou
 
 **Random Forest Regressor (RF):**  
 
+The Random Forest (RF) Regressor utilizes an ensemble of decision trees to model the complex relationships between climate variables and crop yields. By averaging output data over latitude and longitude, the RFR effectively handles missing values and reduces noise, improving prediction stability.
+
+- Captures Non Linear Relationships: Ensemble learning allows RF to model complex climate to yield dependencies 
+- Computational Efficiency: RF scales well to large datasets and is faster for predictions
+- Robustness to Missing Data: Averaging over latitude and longitude helps mitigate data gaps and inconsistencies 
+
 
 ## Results
 
