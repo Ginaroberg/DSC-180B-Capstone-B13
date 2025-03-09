@@ -34,7 +34,7 @@ GPR is a non-parametric Bayesian method that models relationships in data withou
 
 ## Results
 
-![RMSE_table](/assets/images/rmse_table.png)
+![rmse_table](/assets/images/rmse_table.png)
 
 
 
