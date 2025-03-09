@@ -16,7 +16,7 @@ By combining historical data with these climate scenarios, our team is looking t
 To run the models, follow these steps:
 
 1. **Download Data and Preprocess**  
-   Use the provided `prepare_data.py` script to execute the necessary data tasks. This script supports three actions—`download`, `process_input`, and `process_output`—to handle downloading, input data preprocessing, and output data processing respectively.
+   Use the provided `prepare_data.py` script to execute the necessary data tasks. This script supports two actions—`download`, and `process`—to handle downloading, input data preprocessing, and output data processing respectively.
 
 2. **Set Up the Environment**  
    Run the following commands to create and configure a Conda environment:
