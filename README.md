@@ -5,6 +5,8 @@ Navigate to the gh-branch in this repo for Github Pages Code
 
 Github Pages code: https://github.com/Ginaroberg/DSC-180B-Capstone-B13/tree/gh-pages 
 
+Dashboard Repo: https://github.com/Ginaroberg/Global-Crop-Yield-Climate-Simulator
+
 
 ## Project Overview
 
